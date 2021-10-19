@@ -70,7 +70,7 @@ h6 {
   overflow-y: auto;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
-#header .profile img {
+#header .profile #image {
   margin: 15px auto;
   display: block;
   width: 120px;
@@ -106,7 +106,7 @@ h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  color: rgb(168, 69, 42);
+  color: #414141;
   text-decoration: none;
 }
 
@@ -166,17 +166,21 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-  color: rgb(168, 69, 42);
+  color: #414141;
 }
 
 /* Mobile Navigation */
+.toggle i {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
 .mobile-nav-toggle {
   position: fixed;
+  font-size: 10px;
   right: 15px;
   top: 15px;
   z-index: 9998;
   border: 0;
-  font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
   color: rgb(255, 255, 255);
@@ -209,7 +213,7 @@ h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.75);
+  background: rgba(5, 13, 24, 0.85);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -239,7 +243,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid rgb(168, 69, 42);
+  border-bottom: 4px solid #005d98;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -282,16 +286,6 @@ section {
   color: #000000;
   text-align: center;
 }
-/* .section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: rgb(168, 69, 42);
-  bottom: 0;
-  left: 0;
-} */
 .section-title p {
   color: #3d3d3dd5;
   text-align: center;
@@ -320,100 +314,20 @@ section {
 .about .content ul i {
   font-size: 24px;
   margin-right: 5px;
-  color: rgb(168, 69, 42);
+  color: #414141;
   line-height: 0;
 }
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.devname {
+  background: -webkit-linear-gradient(left, #005d98, #227ba2);
+  background: -o-linear-gradient(right, #005d98, #227ba2);
+  background: -moz-linear-gradient(right, #005d98, #227ba2);
+  background: linear-gradient(to right, #005d98, #227ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: rgb(168, 69, 42);
-}
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
-}
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgb(168, 69, 42);
-  position: relative;
-}
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid rgb(168, 69, 42);
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -431,10 +345,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: rgb(168, 69, 42);
+  background: #414141;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid rgb(168, 69, 42);
+  border: 1px solid #414141;
 }
 .services .icon i {
   color: #fff;
@@ -445,7 +359,7 @@ section {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: rgb(168, 69, 42);
+  color: #414141;
 }
 .services .title {
   margin-left: 80px;
@@ -457,7 +371,7 @@ section {
   color: #343a40;
 }
 .services .title a:hover {
-  color: rgb(168, 69, 42);
+  color: #414141;
 }
 .services .description {
   margin-left: 80px;
@@ -498,15 +412,15 @@ section {
 .field #message {
   display: block;
   min-width: 350px;
-  line-height: 20;
   font-size: 14px;
+  height: 200px;
 }
 
 input[type="submit"] {
   display: block;
   padding: 20px 50px;
   font-size: 14px;
-  background-color: rgb(168, 69, 42);
+  background-color: #414141;
   color: #fff;
   border: none;
   border-radius: 10px;
